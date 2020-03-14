@@ -20,30 +20,62 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":null,"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="一个Java工程师往Python爬虫方向转型之路">
-<meta property="og:type" content="website">
-<meta property="og:title" content="糖池">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="列表（list）：列表里的类型： 列表里的类型可以是任意的 列表的基本单位是元素 列表是动态的，它的长度是可变的，理论上容量是无限大！！！ list有2种特殊的生成方式,一种是list(range(num)),一种是[i for i in range(num)]，其中[i for i in range(num)]可变形为[m+n for m in [任意类型数据] for n in 任意类型数据]">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python基础篇">
+<meta property="og:url" content="http://yoursite.com/2020/03/14/Python%E5%9F%BA%E7%A1%80%E7%AF%87/index.html">
 <meta property="og:site_name" content="糖池">
-<meta property="og:description" content="一个Java工程师往Python爬虫方向转型之路">
+<meta property="og:description" content="列表（list）：列表里的类型： 列表里的类型可以是任意的 列表的基本单位是元素 列表是动态的，它的长度是可变的，理论上容量是无限大！！！ list有2种特殊的生成方式,一种是list(range(num)),一种是[i for i in range(num)]，其中[i for i in range(num)]可变形为[m+n for m in [任意类型数据] for n in 任意类型数据]">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="en-resource://database/1156:1">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8Q2fot.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8Q2zWT.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8Qhg9P.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8Qh6ht.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8Qhhng.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8Qh4BQ.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8Qh57j.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8QhTNn.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8Qhb90.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8Qhq3V.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8QTMdg.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8QhjuF.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8QhvB4.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8Q4SE9.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8Q4pNR.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8Q4P9x.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8Q4i36.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8Q4EuD.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8Q4VDe.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8Q4ZHH.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8Q4nUA.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8Q4u4I.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8Q4Q8P.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8Q4lgf.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8Q41v8.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8Q48KS.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8QTAJA.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8QTCZD.png">
+<meta property="article:published_time" content="2020-03-14T07:55:57.000Z">
+<meta property="article:modified_time" content="2020-03-14T08:53:53.666Z">
 <meta property="article:author" content="juziss">
-<meta property="article:tag" content="Python 爬虫">
+<meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="en-resource://database/1156:1">
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/2020/03/14/Python%E5%9F%BA%E7%A1%80%E7%AF%87/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false
+    isHome : false,
+    isPost : true
   };
 </script>
 
-  <title>糖池</title>
+  <title>Python基础篇 | 糖池</title>
   
 
 
@@ -154,10 +186,10 @@
             
 
   <div class="posts-expand">
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/14/Python%E5%9F%BA%E7%A1%80%E7%AF%87/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -171,8 +203,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/14/Python%E5%9F%BA%E7%A1%80%E7%AF%87/" class="post-title-link" itemprop="url">Python基础篇</a>
+          Python基础篇
         </h1>
 
         <div class="post-meta">
@@ -197,7 +228,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h4 id="列表（list）："><a href="#列表（list）：" class="headerlink" title="列表（list）："></a>列表（list）：</h4><h5 id="列表里的类型："><a href="#列表里的类型：" class="headerlink" title="列表里的类型："></a>列表里的类型：</h5><ul>
+        <h4 id="列表（list）："><a href="#列表（list）：" class="headerlink" title="列表（list）："></a>列表（list）：</h4><h5 id="列表里的类型："><a href="#列表里的类型：" class="headerlink" title="列表里的类型："></a>列表里的类型：</h5><ul>
 <li><strong>列表里的类型可以是任意的</strong></li>
 <li><strong>列表的基本单位是元素</strong></li>
 <li><strong>列表是动态的，它的长度是可变的，理论上容量是无限大！！！</strong></li>
@@ -275,81 +306,30 @@
 <p><strong>元组因为其长度大小固定，元素不可变，所以其存储空间一旦固定则无法更改。
 </strong></p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/python/" rel="tag"># python</a>
+          </div>
 
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/13/hello-world/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="juziss">
-      <meta itemprop="description" content="一个Java工程师往Python爬虫方向转型之路">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="糖池">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/13/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-03-13 11:25:44" itemprop="dateCreated datePublished" datetime="2020-03-13T11:25:44+08:00">2020-03-13</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/13/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
@@ -357,12 +337,10 @@
 
   </div>
 
-  
-
-
 
           </div>
           
+    <div class="comments" id="gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -409,6 +387,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#列表（list）："><span class="nav-number">1.</span> <span class="nav-text">列表（list）：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#列表里的类型："><span class="nav-number">1.1.</span> <span class="nav-text">列表里的类型：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#特别标注！！！！字符串也是能使用切片的，比如下图的去空操作，返回的是一个字符串："><span class="nav-number">2.</span> <span class="nav-text">特别标注！！！！字符串也是能使用切片的，比如下图的去空操作，返回的是一个字符串：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#列表的基本操作："><span class="nav-number">3.</span> <span class="nav-text">列表的基本操作：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字典-dict"><span class="nav-number">4.</span> <span class="nav-text">字典(dict)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number"></span> <span class="nav-text">  </span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#字典的值的提取方法"><span class="nav-number">1.</span> <span class="nav-text">字典的值的提取方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字典的操作"><span class="nav-number">2.</span> <span class="nav-text">字典的操作:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#列表与字典的异同："><span class="nav-number">3.</span> <span class="nav-text">列表与字典的异同：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#异："><span class="nav-number">3.1.</span> <span class="nav-text">异：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#同："><span class="nav-number">3.2.</span> <span class="nav-text">同：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#元组"><span class="nav-number">4.</span> <span class="nav-text">元组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常用模块："><span class="nav-number">5.</span> <span class="nav-text">常用模块：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#整型-int"><span class="nav-number">6.</span> <span class="nav-text">整型(int)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关于格式符"><span class="nav-number">7.</span> <span class="nav-text">关于格式符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关于变量作用域"><span class="nav-number">8.</span> <span class="nav-text">关于变量作用域</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#浅谈全局变量和局部变量"><span class="nav-number">9.</span> <span class="nav-text">浅谈全局变量和局部变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#列表和元组的差异"><span class="nav-number">10.</span> <span class="nav-text">列表和元组的差异</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -579,6 +558,25 @@ window.addEventListener('pjax:success', () => {
 
   
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : 'da9d43be3739e832e8b7',
+      clientSecret: 'f7de94575452f8a87cfd0df83ef3f3372ce56e4d',
+      repo        : 'huangsheng6668.github.io',
+      owner       : 'huangsheng6668',
+      admin       : ['huangsheng6668'],
+      id          : '30e0b4b8ebada305302335aab8bd957e',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
 
     </div>
 </body>
