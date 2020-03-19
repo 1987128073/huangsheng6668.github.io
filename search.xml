@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>插件reres的使用</title>
+    <url>/2020/03/19/%E6%8F%92%E4%BB%B6reres%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h5 id="reres是什么？"><a href="#reres是什么？" class="headerlink" title="reres是什么？"></a>reres是什么？</h5><p>&nbsp;&nbsp;&nbsp;&nbsp;reres是一款Chrome插件，当碰到想替换的js、css、html时想要替换，这个时候就可以使用reres来进行解决。</p>
+<h5 id="reres的规则"><a href="#reres的规则" class="headerlink" title="reres的规则"></a>reres的规则</h5><p>&nbsp;&nbsp;&nbsp;&nbsp;reres点击这款reres插件之后，然后点击添加规则，会看到如下的界面：</p>
+<p><img src="https://s1.ax1x.com/2020/03/19/8rf0JA.png" alt="8rf0JA.png"></p>
+<h6 id="IF-URL-match"><a href="#IF-URL-match" class="headerlink" title="IF URL match:"></a>IF URL match:</h6><p>&nbsp;&nbsp;&nbsp;&nbsp;reres用以匹配需要替换的文件，这个比如说你需要替换某个js，那就把其绝对路径写上去。记住<strong>匹配是只能是正则表达式</strong>，当然你也可以获取那个文件的绝对路径。然后通过“^绝对路径”的形式来匹配。</p>
+<h6 id="Response"><a href="#Response" class="headerlink" title="Response:"></a>Response:</h6><p>&nbsp;&nbsp;&nbsp;&nbsp;reres用以替换匹配到的文件的相应文件，即IF URL match匹配到了则会通过Response匹配到的文件进行替换。这个是需要写好路径的，如果是本地文件则需要加上”file:///“,如file:///C:/test.js</p>
+<p>直接实战！</p>
+<h6 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h6><p>实战网页（需要会员才可以登录查看）：<br>&nbsp;&nbsp;&nbsp;&nbsp;aHR0cDovL3d3dy5jcmF3bGVyLWxhYi5jb20vIy9xdWVzdGlvbnMvMTA=</p>
+<p>进入该网站之后，打开检查可以发现一个debugger;<br><img src="https://s1.ax1x.com/2020/03/19/8rhXB8.png" alt="8rhXB8.png"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;不过掉这个debugger下面的请求是无法继续的，所以我们把debugger之后的代码全部copy到我们的ide里面，然后通过各种整理之后得到了一个完整的可以让页面正常运行不报debugger,请求能正常发出的js，然后我们替换页面的js。<br>&nbsp;&nbsp;&nbsp;&nbsp;通过reres来替换，由于我这边把它改成了nodejs的服务（主要是忘记改动哪了。。。），所以目前无法演示替换后的样子，但是我们可以通过观察请求可以看到我们的js已经替换原js了~<br>替换后：<br><img src="https://s1.ax1x.com/2020/03/19/8rIGfH.png" alt="8rIGfH.png"><br>可以看到debugger没有了！<br><img src="https://s1.ax1x.com/2020/03/19/8rIUXt.png" alt="8rIUXt.png"></p>
+<p>PS：记得把reres的打开文件选项打开，如果确定匹配写得没错，记得再去打开那个打开文件选项，就是它是√的都要关了再开，然后刷新页面。</p>
+]]></content>
+      <tags>
+        <tag>JS逆向</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>使用AndroidStudio和Xposed来hook App中的函数（Xposed入门实战）</title>
     <url>/2020/03/16/%E4%BD%BF%E7%94%A8AndroidStudio%E5%92%8CXposed%E6%9D%A5hook-App%E4%B8%AD%E7%9A%84%E5%87%BD%E6%95%B0%EF%BC%88Xposed%E5%85%A5%E9%97%A8%E5%AE%9E%E6%88%98%EF%BC%89/</url>
     <content><![CDATA[<p>&nbsp;&nbsp;&nbsp;&nbsp;起初是因为想爬微信公众号的信息，了解到有四种方式可以爬到：</p>
