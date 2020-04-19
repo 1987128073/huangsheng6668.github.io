@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Begin Go !</title>
+    <url>/2020/04/20/Begin%20Go%20!/</url>
+    <content><![CDATA[<h3 id="Begin-Go"><a href="#Begin-Go" class="headerlink" title="Begin Go !"></a>Begin Go !</h3><p>编写第一个Go程序</p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	fmt.Println(<span class="string">"Hello World"</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>看似简单的一道程序需要有几个点要注意：</p>
+<ol>
+<li>main函数必须只能存在于main包下，即使你的目录名不叫main</li>
+<li>main函数没有返回值</li>
+<li>文件名不需要叫main.go</li>
+</ol>
+<h3 id="退出返回值"><a href="#退出返回值" class="headerlink" title="退出返回值"></a>退出返回值</h3><p>刚才提到main函数没有返回值，倘若我们需要main函数返回一个<strong>异常</strong>值该如何实现？</p>
+<p><strong>os.Exit()</strong></p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	fmt.Println(<span class="string">"Hello World"</span>)</span><br><span class="line">	os.Exit(<span class="number">-1</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://s1.ax1x.com/2020/04/19/JMeh8g.png" alt="JMeh8g.png"></p>
+<p><strong>os.Args</strong></p>
+<p>main函数不能传参，但是需要传参的话需要借用到os.Args</p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">"fmt"</span></span><br><span class="line">	<span class="string">"os"</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span>  &#123;</span><br><span class="line">	fmt.Println(os.Args[<span class="number">1</span>])</span><br><span class="line">	<span class="keyword">if</span>  <span class="built_in">len</span>(os.Args) &gt; <span class="number">1</span>&#123;</span><br><span class="line">		fmt.Println(<span class="string">"Hello World"</span>)</span><br><span class="line">	&#125;</span><br><span class="line">	os.Exit(<span class="number">-1</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://s1.ax1x.com/2020/04/19/JMuGuj.png" alt="JMuGuj.png"></p>
+<p>这里需要注意的是，这里的Args从1开始！！！</p>
+<p>以上就是我的第一篇关于Go的实战文</p>
+]]></content>
+      <categories>
+        <category>GoLand</category>
+      </categories>
+      <tags>
+        <tag>Goland</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>插件reres的使用</title>
     <url>/2020/03/19/%E6%8F%92%E4%BB%B6reres%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h5 id="reres是什么？"><a href="#reres是什么？" class="headerlink" title="reres是什么？"></a>reres是什么？</h5><p>&nbsp;&nbsp;&nbsp;&nbsp;reres是一款Chrome插件，当碰到想替换的js、css、html时想要替换，这个时候就可以使用reres来进行解决。</p>

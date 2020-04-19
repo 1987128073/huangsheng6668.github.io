@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-19T05:32:29.536Z</updated>
+  <updated>2020-04-19T16:45:50.026Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Begin Go !</title>
+    <link href="http://yoursite.com/2020/04/20/Begin%20Go%20!/"/>
+    <id>http://yoursite.com/2020/04/20/Begin%20Go%20!/</id>
+    <published>2020-04-19T16:39:07.000Z</published>
+    <updated>2020-04-19T16:45:50.026Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Begin-Go"><a href="#Begin-Go" class="headerlink" title="Begin Go !"></a>Begin Go !</h3><p>编写第一个Go程序</p><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">fmt.Println(<span class="string">"Hello World"</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>看似简单的一道程序需要有几个点要注意：</p><ol><li>main函数必须只能存在于main包下，即使你的目录名不叫main</li><li>main函数没有返回值</li><li>文件名不需要叫main.go</li></ol><h3 id="退出返回值"><a href="#退出返回值" class="headerlink" title="退出返回值"></a>退出返回值</h3><p>刚才提到main函数没有返回值，倘若我们需要main函数返回一个<strong>异常</strong>值该如何实现？</p><p><strong>os.Exit()</strong></p><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">fmt.Println(<span class="string">"Hello World"</span>)</span><br><span class="line">os.Exit(<span class="number">-1</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="https://s1.ax1x.com/2020/04/19/JMeh8g.png" alt="JMeh8g.png"></p><p><strong>os.Args</strong></p><p>main函数不能传参，但是需要传参的话需要借用到os.Args</p><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line"><span class="string">"fmt"</span></span><br><span class="line"><span class="string">"os"</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span>  &#123;</span><br><span class="line">fmt.Println(os.Args[<span class="number">1</span>])</span><br><span class="line"><span class="keyword">if</span>  <span class="built_in">len</span>(os.Args) &gt; <span class="number">1</span>&#123;</span><br><span class="line">fmt.Println(<span class="string">"Hello World"</span>)</span><br><span class="line">&#125;</span><br><span class="line">os.Exit(<span class="number">-1</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="https://s1.ax1x.com/2020/04/19/JMuGuj.png" alt="JMuGuj.png"></p><p>这里需要注意的是，这里的Args从1开始！！！</p><p>以上就是我的第一篇关于Go的实战文</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;Begin-Go&quot;&gt;&lt;a href=&quot;#Begin-Go&quot; class=&quot;headerlink&quot; title=&quot;Begin Go !&quot;&gt;&lt;/a&gt;Begin Go !&lt;/h3&gt;&lt;p&gt;编写第一个Go程序&lt;/p&gt;
+&lt;figure class=&quot;highlight go&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="GoLand" scheme="http://yoursite.com/categories/GoLand/"/>
+    
+    
+      <category term="Goland" scheme="http://yoursite.com/tags/Goland/"/>
+    
+  </entry>
   
   <entry>
     <title>插件reres的使用</title>
