@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-19T16:45:50.026Z</updated>
+  <updated>2020-04-21T01:51:30.323Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>go语言的基本类型</title>
+    <link href="http://yoursite.com/2020/04/21/go%E8%AF%AD%E8%A8%80%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/"/>
+    <id>http://yoursite.com/2020/04/21/go%E8%AF%AD%E8%A8%80%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/</id>
+    <published>2020-04-21T01:51:30.206Z</published>
+    <updated>2020-04-21T01:51:30.323Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="go语言的基本类型"><a href="#go语言的基本类型" class="headerlink" title="go语言的基本类型"></a>go语言的基本类型</h4><p>数字：</p><ol><li>int、int8、int16、int32、int64</li><li>uint、uint8、uint16、uint32、uint64、uintptr（与上面的区别在于，带u开头的是无符号类型</li><li>byte(uint8的别名)</li><li>rune(int32的别名)</li><li>float32、float64</li><li>complex64、complex128(复数类型，由两个浮点数表示，其中一个表示实部，一个表示虚部，complex64表示为32位实数和虚数；complex128则表示为64位的实数和虚数)</li></ol><p>布尔:</p><p>bool</p><p>字符串</p><p>string</p><h4 id="基本类型的默认值"><a href="#基本类型的默认值" class="headerlink" title="基本类型的默认值"></a>基本类型的默认值</h4><p>bool:</p><p>默认值为false</p><p><img src="https://s1.ax1x.com/2020/04/20/J3iyp4.png" alt="J3iyp4.png"></p><p>string:</p><p>默认值为””,即空字符串</p><p><img src="https://s1.ax1x.com/2020/04/20/J3kJLn.png" alt="J3kJLn.png"></p><p>int型相关:</p><p>默认皆为0</p><p><img src="https://s1.ax1x.com/2020/04/20/J3ADtf.png" alt="J3ADtf.png"></p><p>float型相关:</p><p>默认皆为0</p><p><img src="https://s1.ax1x.com/2020/04/20/J3AOBR.png" alt="J3AOBR.png"></p><p>complex型:</p><p>默认为0+0i</p><p><img src="https://s1.ax1x.com/2020/04/20/J3EAHI.png" alt="J3EAHI.png"></p><h4 id="go不支持隐式转换"><a href="#go不支持隐式转换" class="headerlink" title="go不支持隐式转换"></a>go不支持隐式转换</h4><p><img src="https://s1.ax1x.com/2020/04/20/J3VkzF.png" alt="J3VkzF.png"></p><p>必须进行显式转换才可以</p><p><img src="https://s1.ax1x.com/2020/04/20/J3eAb9.png" alt="J3eAb9.png"></p><h4 id="go可以建立类型别名"><a href="#go可以建立类型别名" class="headerlink" title="go可以建立类型别名"></a>go可以建立类型别名</h4><p><img src="https://s1.ax1x.com/2020/04/20/J3e4r4.png" alt="J3e4r4.png"></p><h4 id="类型的预定义值"><a href="#类型的预定义值" class="headerlink" title="类型的预定义值"></a>类型的预定义值</h4><ol><li>math.MaxInt64</li><li>math.MaxFloat64</li><li>math.MaxUint32</li></ol><p><img src="https://s1.ax1x.com/2020/04/21/J3nP0J.png" alt="J3nP0J.png"></p><h4 id="指针类型"><a href="#指针类型" class="headerlink" title="指针类型"></a>指针类型</h4><p>指针类型与C/C++相比的差异在于不能进行指针运算</p><p><img src="https://s1.ax1x.com/2020/04/21/J3n63V.png" alt="J3n63V.png"></p><p><img src="https://s1.ax1x.com/2020/04/21/J3ngjU.png" alt="J3ngjU.png"></p><p>以上是对Go语言基本类型的简要了解，让我们继续往下深入它！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;go语言的基本类型&quot;&gt;&lt;a href=&quot;#go语言的基本类型&quot; class=&quot;headerlink&quot; title=&quot;go语言的基本类型&quot;&gt;&lt;/a&gt;go语言的基本类型&lt;/h4&gt;&lt;p&gt;数字：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;int、int8、int16、int32、int6
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Begin Go !</title>
